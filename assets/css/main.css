@@ -170,6 +170,7 @@ input, select, textarea {
 		line-height: 1em;
 		margin: 0 0 1em 0;
 		text-transform: uppercase;
+		
 	}
 
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
@@ -3815,10 +3816,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball1.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball1.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball1.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball1.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball4.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball4.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball4.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/vball4.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3965,15 +3966,18 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
+
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../images/vball2.jpg");
 		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding-top: 0;
+
 	}
 
 	body.landing #footer {
@@ -3998,6 +4002,7 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+
 
 	* {
 		box-sizing: border-box;
@@ -4102,3 +4107,146 @@ input, select, textarea {
 			left: 70%;
 		}
 	}
+
+	.panels {
+		height: 100vh;
+		width: 100vw;
+		overflow: hidden;
+		display: flex;
+	  }
+	  
+	  .panel {
+		padding: 0 10px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		transition: flex 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+		text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
+	  }
+	  
+	  .panel .highlight {
+		font-size: 36px;
+		text-shadow: 1px 1px 1px #000, 2px 2px 1px #000;
+		transition: font-size 0.7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+	  }
+	  
+	  .panel .sm-highlight {
+		display: none;
+	  }
+	  
+	  .panel .title {
+		flex: 3;
+		font-family: 'Play', sans-serif;
+		font-size: 24px;
+		text-transform: uppercase;
+	  }
+	  
+	  .panel .details {
+		flex: 3;
+		font-family: 'Play', sans-serif;
+		font-size: 24px;
+	  }
+	  
+	  .panel .details .item {
+		list-style-type: none;
+		margin: 5px 0;
+	  }
+	  
+	  .panel .details .item a {
+		color: #fff;
+		text-decoration: none;
+	  }
+	  
+	  .panel > * {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		transition: transform .5s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+	  }
+	  
+	  .panel:last-of-type .details {
+		text-align: center;
+	  }
+	  
+	  .panel.open {
+		flex: 5;
+	  }
+	  
+	  .panel.open .highlight {
+		font-size: 48px;
+	  }
+	  
+	  .panel > *:first-child { transform: translateY(-300px); }
+	  .panel.active > *:first-child { transform: translateY(0); }
+	  .panel > *:last-child { transform: translateY(300px); }
+	  .panel.active > *:last-child { transform: translateY(0); }
+	  
+	  .panel.one {
+		background: #463785 url('../../images/vball5.jpg');
+		background-position: -100px 0;
+	  }
+	  
+	  .panel.two {
+		background: #124559 url('https://source.unsplash.com/nIkuMWT4Imc/800x800');
+		background-position: center;
+	  }
+	  
+	  .panel.three {
+		background: #4A1942 url('https://source.unsplash.com/4rDCa5hBlCs/1000x1000');
+		background-position: center;
+	  }
+	  
+	  .panel.four {
+		background: #598392 url('https://source.unsplash.com/1DGD2_CKCbo/800x900');
+		background-position: center;
+	  }
+	  
+	  .panel.five {
+		background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/800x1000');
+		background-position: center;
+	  }
+	  
+	  @media screen and (max-width: 1080px) {
+		.panel.open .highlight { font-size: 30px; }
+		.panel .sm-highlight { display: flex; }
+		.panel .highlight.developer { display: none; }
+		.panel .highlight {
+		  font-size: 18px;
+		  transition: font-size .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+		}
+	  
+		.panel .title,
+		.panel .details {
+		  font-size: 12px;
+		  transition: transform .7s cubic-bezier(0.38, -0.06, 0.7, -0.11);
+		}
+	  
+		.panel .details .item { margin: 3px 0; }
+	  }
+	  
+	  @media screen and (max-width: 780px) and (max-height: 500px){
+		.panel.one {
+		  background: #463785 url('https://source.unsplash.com/5pXwpRw6O8c/500x400');
+		}
+	  
+		.panel.two {
+		  background: #124559 url('https://source.unsplash.com/nIkuMWT4Imc/500x400');
+		  background-position: center;
+		}
+	  
+		.panel.three {
+		  background: #4A1942 url('https://source.unsplash.com/4rDCa5hBlCs/500x400');
+		  background-position: center;
+		}
+	  
+		.panel.four {
+		  background: #598392 url('https://source.unsplash.com/1DGD2_CKCbo/500x400');
+		}
+	  
+		.panel.five {
+		  background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/500x400');
+		  background-position: center;
+		}
+
