@@ -2982,7 +2982,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background-color:#242b33;
 			color: #d3d4e4;
 		}
 
@@ -4184,7 +4184,7 @@ input, select, textarea {
 	  .panel.active > *:last-child { transform: translateY(0); }
 	  
 	  .panel.one {
-		background: #463785 url('../../images/vball5.jpg');
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../images/vball5.jpg");
 		background-position: -100px 0;
 	  }
 	  
