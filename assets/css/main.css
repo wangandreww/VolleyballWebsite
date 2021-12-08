@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import "bourbon";
 
 /*
 	Spectral by HTML5 UP
@@ -3965,10 +3966,12 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball4.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../images/vball4.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball4.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball4.jpg");
+
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../images/vball2.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3998,6 +4001,111 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+
+
+	* {
+		box-sizing: border-box;
+	  }
+	  
+	  body {
+		background: black;
+	  }
+	  
+	  .span {
+		margin: 0;
+		padding: 0;
+	  }
+	  
+	  .end-left {
+		margin-left: -235px;
+	  }
+	  
+	  .end-right {
+		margin-right: -117.5px;
+	  }
+	  
+	  .outline {
+		position: absolute;
+		top: 20px;
+	  }
+	  
+	  .outline {
+		color: black;
+		-webkit-text-fill-color: transparent;
+		/* Will override color (regardless of order) */
+		-webkit-text-stroke-width: 2px;
+		-webkit-text-stroke-color: white;
+		font-size: 64px;
+		font-family: "Arvo", serif;
+	  }
+	  
+	  .orbs {
+		font-family: "Raleway", sans-serif;
+		font-weight: 100;
+		display: block;
+		font-size: 8em;
+		margin-bottom: 25%;
+	  }
+	  .orbs span {
+		color: red;
+		display: inline-block;
+		text-align: center;
+		border-radius: 50%;
+		text-shadow: 0 0 20px white, 1px 1px 20px white, 2px 2px 20px white, -1px -1px 20px white, -2px -2px 20px white;
+		position: absolute;
+		left: 8%;
+	  }
+	  .orbs span:first-child {
+		margin-left: -210px;
+	  }
+	  .orbs span:not(:first-child) {
+		margin-left: -35px;
+	  }
+	  
+	  .glow {
+		opacity: 0;
+		font-family: "Raleway", sans-serif;
+		font-weight: 300;
+		color: lightgray;
+		margin-left: -222.5px;
+		font-size: 1.25em;
+		position: absolute;
+		top: 20em;
+		left: 49%;
+	  }
+
+	  @media screen and (max-width: 920px) {
+
+		.orbs {
+			font-weight: 10;
+			font-size: 7rem;
+			margin-left: 8%;
+		}
+		.glow{
+			font-size: 1em;
+			top:25em;
+			left: 55%;
+		}
+
+	}
+	@media screen and (max-width: 736px) {
+		.orbs {
+			font-size: 4em;
+			margin-left: 10%;
+			padding-left: 20%;
+		}
+		.orbs span:first-child {
+			margin-left: -200px;
+		  }
+		  .orbs span:not(:first-child) {
+			margin-left: -5px;
+		  }
+		.glow{
+			font-size: .75em;
+			top:21em;
+			left: 70%;
+		}
 	}
 
 	.panels {
@@ -4141,4 +4249,4 @@ input, select, textarea {
 		  background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/500x400');
 		  background-position: center;
 		}
-	  }
+
