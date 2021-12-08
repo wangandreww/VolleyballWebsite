@@ -11,7 +11,7 @@ dropOrbs = function(){
   $orbs.eq(orb).velocity({top: '70px'}, 400).velocity({scaleX: 1, scaleY: 1, color: '#fff'}, 1200).css('position', 'relative');
   orb = orb + 1;
   if(orb < numOrbs){
-    setTimeout(dropOrbs, 210);
+    setTimeout(dropOrbs, 200);
   }
   else{
     setTimeout(function(){$('.glow').velocity({opacity: 1}, 1200);}, 1200);

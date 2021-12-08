@@ -4049,7 +4049,7 @@ input, select, textarea {
 		border-radius: 50%;
 		text-shadow: 0 0 20px white, 1px 1px 20px white, 2px 2px 20px white, -1px -1px 20px white, -2px -2px 20px white;
 		position: absolute;
-		left: 9%;
+		left: 8%;
 	  }
 	  .orbs span:first-child {
 		margin-left: -210px;
@@ -4060,20 +4060,45 @@ input, select, textarea {
 	  
 	  .glow {
 		opacity: 0;
-		font-family: 'Font Awesome 5 Free';
+		font-family: "Raleway", sans-serif;
 		font-weight: 300;
 		color: lightgray;
 		margin-left: -222.5px;
-		font-size: 20px;
+		font-size: 1.25em;
 		position: absolute;
-		top: 400px;
-		left: 50%;
+		top: 20em;
+		left: 49%;
 	  }
 
-	  @media screen and (max-width: 740px) {
+	  @media screen and (max-width: 920px) {
 
 		.orbs {
-			font-size:5rem;
+			font-weight: 10;
+			font-size: 7rem;
+			margin-left: 8%;
+		}
+		.glow{
+			font-size: 1em;
+			top:25em;
+			left: 55%;
 		}
 
+	}
+	@media screen and (max-width: 736px) {
+		.orbs {
+			font-size: 4em;
+			margin-left: 10%;
+			padding-left: 20%;
+		}
+		.orbs span:first-child {
+			margin-left: -200px;
+		  }
+		  .orbs span:not(:first-child) {
+			margin-left: -5px;
+		  }
+		.glow{
+			font-size: .75em;
+			top:21em;
+			left: 70%;
+		}
 	}
