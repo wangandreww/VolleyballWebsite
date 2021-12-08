@@ -2729,15 +2729,15 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: lightgray;
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: #b2beb5;
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color:  	#d0d0d0;
 		}
 
 		.spotlight:nth-child(4) {
@@ -4000,8 +4000,8 @@ input, select, textarea {
 	body.landing #page-wrapper {
 
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../images/vball2.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../../images/vball2.jpg");
+		background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 
 		background-attachment: fixed;
