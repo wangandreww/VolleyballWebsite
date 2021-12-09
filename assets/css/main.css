@@ -4141,7 +4141,47 @@ input, select, textarea {
 		}
 	}
 
-	.panels {
+	div#carousel { 
+		perspective: 1200px; 
+		background: lightgrey; 
+		padding-top: 5%; 
+		font-size:0; 
+		margin-bottom: 3rem; 
+		overflow: hidden; 
+	  }
+	  figure#spinner { 
+		transform-style: preserve-3d; 
+		height: 300px; 
+		transform-origin: 50% 50% -500px; 
+		transition: 1s; 
+	  } 
+	  figure#spinner img { 
+		width: 40%; max-width: 425px; 
+		position: absolute; left: 30%;
+		transform-origin: 50% 50% -500px;
+		outline:1px solid transparent; 
+	  }
+	  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+	  }
+	  figure#spinner img:nth-child(2) { transform: rotateY(-120deg); }
+	  figure#spinner img:nth-child(3) { transform: rotateY(-240deg); }
+
+	  div#carousel ~ span { 
+		color: #fff; 
+		margin: 5%; 
+		display: inline-block; 
+		text-decoration: none; 
+		font-size: 2rem; 
+		transition: 0.6s color; 
+		position: relative; 
+		margin-top: -6rem; 
+		border-bottom: none; 
+		line-height: 0; }
+	  div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+	  
+	/* .panels {
 		height: 100vh;
 		width: 100vw;
 		overflow: hidden;
@@ -4281,9 +4321,5 @@ input, select, textarea {
 		.panel.five {
 		  background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/500x400');
 		  background-position: center;
-		}
-<<<<<<< HEAD
-=======
-
->>>>>>> dc8329401c94e339107557544fd09234eedc5417
-	}
+		} */
+		
