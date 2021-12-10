@@ -2820,7 +2820,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 6em 0 0 0 ;
 	}
 
 		.wrapper > .inner {
@@ -4152,7 +4152,7 @@ input, select, textarea {
 		background: lightgrey; 
 		padding-top: 5%; 
 		font-size:0; 
-		margin-bottom: 3rem; 
+		margin-bottom: 0; 
 		overflow: hidden; 
 	  }
 	  figure#spinner { 
@@ -4329,11 +4329,4 @@ input, select, textarea {
 		  background-position: center;
 
 		}
-<<<<<<< HEAD
 	}
-=======
-	}
-
-	
-
->>>>>>> 3b0e42aa66142dcba8b52376dda3f37322b65f14
