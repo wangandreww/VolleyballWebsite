@@ -3864,6 +3864,12 @@ input, select, textarea {
 		#spike2{
 			float:right;
 		}
+		#pass{
+			float:right;
+			max-width: 50%;
+			height: auto;
+			object-fit: cover;
+		}
 
 		#main > header h2 {
 			font-size: 1.75em;
