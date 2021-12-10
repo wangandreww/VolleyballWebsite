@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Volleyball | Hitter/Spiker</title>
+		<title>Volleyball | Gallery</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,47 +42,33 @@
 				<!-- Main -->
 					<article id="main">
 						<header>
-							<h2>Hitter/Spiker</h2>
-							<p>The point scorer</p>
+							<h2>Gallery</h2>
+							<p>Photos of the Game</p>
 						</header>
 						<section class="wrapper style5">
 							<div class="inner">
 
 								<section>
-									<div class="video">
-										<iframe width="560" height="315" src="https://www.youtube.com/embed/GWzkF1hNavc" title="YouTube video player" 
-										frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-										</iframe>	 
-									</div>
-									<hr/>
-									<h4>Position Overview:</h4>
-									<p>The spiker is the most offensive role of the team. They are responsible for putting the ball down and scoring points for their team.
-										Usually, the spiker needs to have a high vertical jump in order to attack the ball effectively and beat the blockers on the other side.
-									</p>
-									<hr />
-									<header>
-										<h4>Tips on being a great Spiker</h4>
-									</header>
-									<div class="row">
-										<div class="col-6 col-12-medium">
-											<div id="attack_tip">
-											<ul>
-												<li><h5>Timing is Key</h5></li>
-												<p>Timing is the single most important thing when trying to spike a volleyball. Try to time your jump
-													so that you hit the ball at the highest point of contact.
-												</p>
-												<li><h5>Keeping your Elbow High</h5></li>
-												<p>Keeping your Elbow High will allow you to reach and stay on top of the ball.</p>
-												<li><h5>Learn to Adjust</h5></li>
-												<p>Adjusting is crucial in becoming a good hitter. Not every set is going to be perfect
-													so make sure that you watch the set before you leave to spike so you know where the ball is going to be. 
-												</p>
-											</ul>
-											</div>
+									<h4>Photos of Game</h4>
+									<h5>Click on Image to Enlarge!</h5>
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-4"><span class="image fit"><img src="images/vball7.jpg" alt="" onclick="displayImage(this)"/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/vball2.jpg" alt="" onclick="displayImage(this)"/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/vball6.jpg" alt="" onclick="displayImage(this)"/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/vball3.jpg" alt="" onclick="displayImage(this)"/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/vball4.jpg" alt="" onclick="displayImage(this)"/></span></div>
+											<div class="col-4"><span class="image fit"><img src="images/vball5.jpg" alt="" onclick="displayImage(this)"/></span></div>
 										</div>
-										<img id="spike2" src="images/volleyball_spike2.jfif" alt="Player in Spiking Motion">
 									</div>
-									<hr />
+
+									<div class="bigpic">
+										<!-- Close the image -->
+										<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+										<!-- Expanded image -->
+										<img id="fullImg" style="width:100%">
+									</div>
 								</section>
 
 							</div>
