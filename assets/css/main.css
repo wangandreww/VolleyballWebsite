@@ -2820,7 +2820,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		padding: 6em 0 0 0 ;
 	}
 
 		.wrapper > .inner {
@@ -3867,6 +3867,12 @@ input, select, textarea {
 			float:right;
 			width:40%;
 		}
+		#pass{
+			float:right;
+			max-width: 50%;
+			height: auto;
+			object-fit: cover;
+		}
 
 		#main > header h2 {
 			font-size: 1.75em;
@@ -4154,7 +4160,7 @@ input, select, textarea {
 		background: #6f8299; 
 		padding-top: 3%; 
 		font-size:0; 
-		margin-bottom: 3rem; 
+		margin-bottom: 0; 
 		overflow: hidden; 
 	  }
 	  figure#spinner { 
@@ -4331,11 +4337,4 @@ input, select, textarea {
 		  background-position: center;
 
 		}
-<<<<<<< HEAD
 	}
-=======
-	}
-
-	
-
->>>>>>> 3b0e42aa66142dcba8b52376dda3f37322b65f14
