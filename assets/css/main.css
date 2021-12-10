@@ -145,7 +145,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		border-bottom: dotted 1px;
-		color: inherit;
+		color: blue;
 		text-decoration: none;
 	}
 
@@ -2734,15 +2734,16 @@ input, select, textarea {
 		}
 
 		.spotlight:nth-child(1) {
-			background-color: rgba(0, 0, 0, 0.075);
+			background-color: #242b33;
+			border-top: 6rem solid #242b33;
 		}
 
 		.spotlight:nth-child(2) {
-			background-color: rgba(0, 0, 0, 0.15);
+			background-color: #1f2329;
 		}
 
 		.spotlight:nth-child(3) {
-			background-color: rgba(0, 0, 0, 0.225);
+			background-color:  	#242b33;
 		}
 
 		.spotlight:nth-child(4) {
@@ -3382,7 +3383,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #808080;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
@@ -4005,8 +4006,8 @@ input, select, textarea {
 	body.landing #page-wrapper {
 
 		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.7), rgba(0,0,0,.7)), url("../../images/vball2.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,.3), rgba(0,0,0,.3)), url("../../images/vball2.jpg");
+		background-image: -ms-linear-gradient(top, rgba(255, 255, 255, 0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 		background-image: linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/vball2.jpg");
 
 		background-attachment: fixed;
@@ -4145,7 +4146,47 @@ input, select, textarea {
 		}
 	}
 
-	.panels {
+	div#carousel { 
+		perspective: 1200px; 
+		background: lightgrey; 
+		padding-top: 5%; 
+		font-size:0; 
+		margin-bottom: 3rem; 
+		overflow: hidden; 
+	  }
+	  figure#spinner { 
+		transform-style: preserve-3d; 
+		height: 300px; 
+		transform-origin: 50% 50% -500px; 
+		transition: 1s; 
+	  } 
+	  figure#spinner img { 
+		width: 40%; max-width: 425px; 
+		position: absolute; left: 30%;
+		transform-origin: 50% 50% -500px;
+		outline:1px solid transparent; 
+	  }
+	  figure#spinner img:nth-child(1) { transform:rotateY(0deg); 
+	  }
+	  figure#spinner img:nth-child(2) { transform: rotateY(-120deg); }
+	  figure#spinner img:nth-child(3) { transform: rotateY(-240deg); }
+
+	  div#carousel ~ span { 
+		color: #fff; 
+		margin: 5%; 
+		display: inline-block; 
+		text-decoration: none; 
+		font-size: 2rem; 
+		transition: 0.6s color; 
+		position: relative; 
+		margin-top: -6rem; 
+		border-bottom: none; 
+		line-height: 0; }
+	  div#carousel ~ span:hover { color: #888; cursor: pointer; }
+
+
+	  
+	/* .panels {
 		height: 100vh;
 		width: 100vw;
 		overflow: hidden;
@@ -4285,5 +4326,13 @@ input, select, textarea {
 		.panel.five {
 		  background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/500x400');
 		  background-position: center;
+
 		}
+<<<<<<< HEAD
 	}
+=======
+	}
+
+	
+
+>>>>>>> 3b0e42aa66142dcba8b52376dda3f37322b65f14
