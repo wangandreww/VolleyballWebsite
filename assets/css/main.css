@@ -145,7 +145,7 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		border-bottom: dotted 1px;
-		color: inherit;
+		color: blue;
 		text-decoration: none;
 	}
 
@@ -4282,8 +4282,6 @@ input, select, textarea {
 		  background: #893168 url('https://source.unsplash.com/45bI5ezo3gE/500x400');
 		  background-position: center;
 		}
-<<<<<<< HEAD
-=======
-
->>>>>>> dc8329401c94e339107557544fd09234eedc5417
 	}
+
+	
