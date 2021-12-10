@@ -3865,6 +3865,12 @@ input, select, textarea {
 			float:right;
 			width:40%;
 		}
+		#pass{
+			float:right;
+			max-width: 50%;
+			height: auto;
+			object-fit: cover;
+		}
 
 		#main > header h2 {
 			font-size: 1.75em;
