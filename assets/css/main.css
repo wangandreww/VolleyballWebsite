@@ -4193,7 +4193,7 @@ input, select, textarea {
 
 
 	  
-	/* .panels {
+	 .panels {
 		height: 100vh;
 		width: 100vw;
 		overflow: hidden;
@@ -4229,13 +4229,15 @@ input, select, textarea {
 	  
 	  .panel .details {
 		flex: 3;
-		font-family: 'Play', sans-serif;
-		font-size: 24px;
+		font-family: "Raleway", sans-serif;
+		font-size: 50px;
+		align-items: center;
+		text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 	  }
 	  
 	  .panel .details .item {
 		list-style-type: none;
-		margin: 5px 0;
+		padding-right:50%;
 	  }
 	  
 	  .panel .details .item a {
@@ -4257,6 +4259,7 @@ input, select, textarea {
 	  
 	  .panel.open {
 		flex: 5;
+		object-fit: cover;
 	  }
 	  
 	  .panel.open .highlight {
@@ -4269,18 +4272,25 @@ input, select, textarea {
 	  .panel.active > *:last-child { transform: translateY(0); }
 	  
 	  .panel.one {
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../images/panel1.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/hithome.jpg");
 		background-position: -100px 0;
+		max-width: 48%;
+		margin-bottom: 13%;
+		
 	  }
 	  
 	  .panel.two {
-		background: #124559 url('https://source.unsplash.com/nIkuMWT4Imc/800x800');
-		background-position: center;
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/setting1.jpg");
+		max-width: 50%;
+		background-position: left;
+		margin-bottom: 13%;
 	  }
 	  
 	  .panel.three {
-		background: #4A1942 url('https://source.unsplash.com/4rDCa5hBlCs/1000x1000');
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../../images/passing.jpg");
 		background-position: center;
+		max-width: 50%;
+		margin-bottom: 13%;
 	  }
 	  
 	  .panel.four {
@@ -4335,11 +4345,7 @@ input, select, textarea {
 		  background-position: center;
 
 		}
-<<<<<<< HEAD
-	}
-=======
 	}
 
 	
 
->>>>>>> 3b0e42aa66142dcba8b52376dda3f37322b65f14
