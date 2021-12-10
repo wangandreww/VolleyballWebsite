@@ -2111,6 +2111,11 @@ input, select, textarea {
 		cursor: pointer;
 	}
 
+	#setter{
+		float:right;
+		width:50%;
+	}
+
 	.image {
 		border-radius: 3px;
 		border: 0;
@@ -4323,7 +4328,11 @@ input, select, textarea {
 		  background-position: center;
 
 		}
+<<<<<<< HEAD
+	}
+=======
 	}
 
 	
 
+>>>>>>> 3b0e42aa66142dcba8b52376dda3f37322b65f14
